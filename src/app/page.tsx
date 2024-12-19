@@ -1,101 +1,158 @@
-import Image from "next/image";
+import Footer from './components/ui/Footer';
+import Header from './components/ui/Header';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className='relative min-h-screen'>
+      <div className='absolute inset-0 overflow-x-hidden bg-background'>
+        <div className='mx-auto w-full'>
+          <Header />
+          <section
+            id='hero'
+            className='lg:pt-30 relative h-[700px] w-screen bg-primary pt-32 lg:h-[800px] lg:pb-14'
+          >
+            <div className='container relative mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-10'>
+              <div className='flex flex-col sm:w-1/2 lg:w-2/3 lg:flex-row'>
+                {/* <div className='flex-1'> */}
+                <h1 className='mb-10 w-full text-left font-[family-name:Fahkwang] text-3xl text-accent sm:mb-10 sm:text-3xl md:text-6xl lg:mb-10 lg:text-6xl'>
+                  Ceļā uz stabilu un ilgtspējīgu nākotni ar inovatīvām viedajām
+                  tehnoloģijām
+                </h1>
+                {/* </div> */}
+                {/* <div className='max-w-[100px] flex-1 lg:ml-10'>
+                  <img
+                    src={HeroImage.src}
+                    alt='Hero Image'
+                    className='h-auto w-full'
+                  />
+                </div> */}
+              </div>
+              <div className='flex flex-col sm:w-1/2 lg:w-4/5 lg:flex-row'>
+                <h2 className='text-left text-white sm:text-4xl lg:text-2xl'>
+                  PC Consulting realizē projektu Nr. 2.2.1.3.i.0/1/24/A/CFLA/004
+                  - “Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
+                  izstrāde, integrējot atjaunojamos energoresursus un
+                  elektrotīkla balansēšanu”.
+                </h2>
+              </div>
+            </div>
+          </section>
+          <section
+            id='section-1 '
+            className='my-12 h-full w-screen bg-background sm:my-12 lg:my-20'
+          >
+            <div className='container mx-auto max-w-[1043px] px-4 pb-2 sm:px-6'>
+              {/* <div className='w-full sm:w-1/2 lg:w-2/3'>
+                <h2 className='pb-12 text-left text-2xl text-secondary sm:text-4xl lg:text-2xl'>
+                  Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
+                  izstrāde, integrējot atjaunojamos energoresursus un
+                  elektrotīkla balansēšanu
+                </h2>
+              </div> */}
+              <div className='grid gap-6 sm:min-h-full lg:grid-cols-[1fr_2fr]'>
+                <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                  <h3 className='pb-10 text-2xl'>
+                    Pasaulē unikāls ielu apmaļu elektroauto uzlādes risinājums
+                  </h3>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+                  <p className='pb-4 text-base'>
+                    Pētījums par viedo uzlādes standartu ieviešanas iespējām
+                  </p>
+                  <p className='pb-4 text-base'>
+                    Ielu apmaļu uzlādes iekārtas izstrādāšana Latvijas
+                    apstākļiem{' '}
+                  </p>
+                  <p className='text-base'>
+                    Divvirzienu uzlādes risinājuma izstrāde viedo V2G
+                    pakalpojumu sniegšanai{' '}
+                  </p>
+                </div>
+                <div className='flex flex-col gap-6'>
+                  <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                    <h3 className='pb-7 text-2xl'>
+                      Universāls komunikāciju un uzlādes iekārtu vadības modulis
+                    </h3>
+
+                    <p className='text-base'>
+                      Komunikācijas modeļa izstrāde, ieviešot ISO15118 protokolu
+                    </p>
+                  </div>
+                  <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                    <h3 className='pb-7 text-2xl'>
+                      Enerģijas plūsmu vadības sistēma
+                    </h3>
+
+                    <p className='pb-4 text-base'>
+                      Enerģijas plūsmu vadības sistēmas izstrāde
+                    </p>
+                    <p className='text-base'>
+                      Sistēmas backend programmatūras izstrāde
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id='section-2'
+            className='my-12 h-full w-screen bg-primary sm:my-12 lg:my-20'
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className='container mx-auto max-w-[1043px] px-4 pb-20 pt-12 sm:px-6 sm:pb-20 sm:pt-12 lg:py-20'>
+              <div className='lg:gap-16" flex flex-col gap-8 lg:flex-row'>
+                <div className='lg:w-1/2'>
+                  <h2 className='text-left text-2xl text-secondary text-white sm:text-4xl lg:text-2xl'>
+                    Projekta īstenotājs SIA “PC Consulting ” Reģistrācijas Nr.
+                    40203154418
+                  </h2>
+                </div>
+                {/* <div className='lg:w-1/2'>
+                  <h2 className='text-left text-2xl text-secondary text-white sm:text-4xl lg:text-2xl'>
+                    Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
+                    izstrāde, integrējot atjaunojamos energoresursus un
+                    elektrotīkla balansēšanu
+                  </h2>
+                </div> */}
+              </div>
+              <div className='grid w-full gap-6 pt-12 sm:grid-cols-1 lg:grid-cols-3'>
+                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                  <h3 className='pb-7 text-2xl'>Projekta Ilgums</h3>
+                  <p className='text-secondary'>10/2024 - 09/2026</p>
+                </div>
+                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                  <h3 className='pb-7 text-2xl'>Kopējais Budžets</h3>
+                  <p className='text-secondary'>1 307 590.00 €</p>
+                </div>
+                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                  <h3 className='pb-7 text-2xl'>ES Finansējums</h3>
+                  <p className='text-secondary'>1 307 590.00 €</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id='section-3'
+            className='my-12 h-full w-screen bg-background sm:my-12 lg:my-20'
           >
-            Read our docs
-          </a>
+            <div className='container mx-auto max-w-[1043px] px-4 pb-2 sm:px-6 lg:w-2/3'>
+              <h3 className='pb-7 text-2xl text-black'>Projekta Mērķis</h3>
+              <p className='text-base text-black'>
+                Pētījuma mērķis ir izstrādāt un demonstrēt viedu
+                inženiersistēmas prototipu, kas nodrošinās automatizētu
+                elektrotīkla balansēšanu no vairākām lokācijām vienlaicīgi,
+                iekļaujot zaļos enerģijas avotus, izmantojot transportlīdzekļos
+                un uzlādes stacijās iebūvētās baterijas elektrotīkla
+                stabilizēšanai, nodrošinot elektrotīkla nevienmērīgu noslodzi,
+                samazinot gala lietotāja elektroenerģijas izmaksas, uzlabojot
+                inženiersistēmas pieejamību pilsētvidē un saglabājot vēsturisko
+                mantojumu. Pētniecības projekts tiek īstenots SIA “VMKC”
+                projekta Nr. 2.2.1.3.1.0/1/24/A/CFLA/004 ietvaros
+              </p>
+            </div>
+          </section>
+          <hr className='my-8 border-t border-black'></hr>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Footer />
+      </div>
     </div>
   );
 }
