@@ -2,6 +2,7 @@ import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
 import Image3 from '../assets/nap-logo-1.png';
 import Image4 from '../assets/es-next-logo-01.png';
+import Button from '../components/ui/Button';
 
 const Jaunumi: React.FC = () => {
   return (
@@ -20,11 +21,14 @@ const Jaunumi: React.FC = () => {
               </h1>
             </div>
           </section>
-          <section className='w-screen bg-primary pb-9 sm:pb-2 lg:pb-10'>
-            <div className='container mx-auto max-w-[1043px] px-4 pb-2 sm:px-6'>
+          <section
+            id='section-1'
+            className='w-screen bg-primary pb-14 sm:pb-2 lg:pb-14'
+          >
+            <div className='container mx-auto max-w-[1043px] px-4 pb-10 sm:px-6'>
               <div className='shadow-subtle justify-center rounded-[20px] bg-accent text-black'>
-                <div className='lg:flex-crow flex flex-row'>
-                  <div className='bg-background py-14 text-black sm:w-2/5 lg:rounded-l-[20px]'>
+                <div className='flex flex-row lg:flex-row'>
+                  <div className='flex items-center justify-center bg-background py-14 text-black sm:w-2/5 lg:rounded-l-[20px]'>
                     <div className='flex flex-row justify-center gap-10'>
                       {' '}
                       <img
@@ -51,6 +55,11 @@ const Jaunumi: React.FC = () => {
                       integrējot atjaunojamos energoresursus un elektrotīkla
                       balansēšanu” īstenošanu.
                     </p>
+                    <div className='pt-10'>
+                      <Button className='w-44' variant='outlineBlack'>
+                        Uzzināt vairāk
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
