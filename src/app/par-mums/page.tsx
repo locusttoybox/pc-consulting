@@ -13,10 +13,10 @@ const ParMums: React.FC = () => {
         <main>
           <section
             id='par-mums'
-            className='w-screen bg-primary pb-2 pt-28 sm:pb-2 sm:pt-14 lg:pb-16 lg:pt-28'
+            className='w-screen bg-primary pb-14 pt-28 sm:pb-2 sm:pt-14 lg:pb-14 lg:pt-28'
           >
             <div className='h-800px container mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
-              <h1 className='pb-7 font-fahkwang text-3xl text-accent sm:text-3xl lg:text-6xl'>
+              <h1 className='pb-14 font-fahkwang text-3xl text-accent sm:text-3xl lg:text-6xl'>
                 Par Mums
               </h1>
               <h2 className='text-secondary text-white lg:text-2xl'>
