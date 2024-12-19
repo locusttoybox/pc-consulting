@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </section>
-      <hr className='my-8 border-t border-black'></hr>
+      <hr className='my-6 border-t border-black'></hr>
       <section
         id='footer-logos'
-        className='mb-4 mt-12 h-full w-screen bg-[#FDFFFC] sm:my-2 lg:my-12'
+        className='mb-2 mt-2 h-full w-screen bg-[#FDFFFC] lg:my-6'
       >
         <div className='container mx-auto max-w-[1043px] px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-row justify-center gap-20'>
