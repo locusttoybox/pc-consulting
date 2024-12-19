@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
           )}{' '}
           <div className='flex items-center justify-between gap-10'>
             <div className='align-center'>
-              <div className='flex gap-6 sm:hidden'>
+              <div className='hidden gap-6 sm:flex'>
                 <a
                   href='/par-mums'
                   className='font-fahkwang text-secondary text-white hover:text-accent'
@@ -66,7 +66,7 @@ const Header: React.FC<HeaderProps> = () => {
               </Button>
             </a> */}
             <button
-              className='text-white hover:text-accent focus:outline-none sm:hidden'
+              className='block text-white hover:text-accent focus:outline-none sm:hidden'
               onClick={toggleMenu}
             >
               <svg
