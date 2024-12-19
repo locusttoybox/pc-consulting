@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
     outlineWhite:
       'bg-transparent border-2 border-white text-white hover:bg-black-10 hover:border-accent',
     outlineBlack:
-      'bg-transparent border-2 border-black text-black hover:bg-black-10',
+      'bg-transparent border-2 border-black text-black hover:bg-black-10 hover:border-background hover:text-background',
   };
 
   return (

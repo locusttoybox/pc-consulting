@@ -27,6 +27,49 @@ const Jaunumi: React.FC = () => {
           >
             <div className='container mx-auto max-w-[1043px] px-4 pb-10 sm:px-6'>
               <div className='shadow-subtle justify-center rounded-[20px] bg-accent text-black'>
+                <div className='flex flex-col sm:flex-col lg:flex-row'>
+                  <div className='flex items-center justify-center bg-background py-14 text-black sm:w-2/5 sm:rounded-l-none sm:rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none'>
+                    {' '}
+                    <div className='flex flex-row justify-center gap-10'>
+                      {' '}
+                      <img
+                        src={Image3.src}
+                        className='h-28 w-28'
+                        alt='nacionalais atistibas plans logo'
+                      ></img>
+                      <img
+                        src={Image4.src}
+                        className='h-28 w-28'
+                        alt='nacionalais atistibas plans logo'
+                      ></img>
+                    </div>
+                  </div>
+                  <div className='w:1/2 flex flex-col justify-center p-6 lg:w-3/5 lg:rounded-l-none lg:rounded-r-[20px]'>
+                    {' '}
+                    <h3 className='pb-10 text-2xl'>
+                      Par projekta Nr. 2.2.1.3.i.0/1/24/A/CFLA/004 uzsākšanu
+                    </h3>
+                    <p className='text-base text-black'>
+                      Sabiedrība SIA PC Consulting, sadarbībā ar SIA VMKC ir
+                      uzsākusi pētniecības projekta “Videi draudzīgas
+                      elektroauto uzlādes ekosistēmas prototipa izstrāde,
+                      integrējot atjaunojamos energoresursus un elektrotīkla
+                      balansēšanu” īstenošanu.
+                    </p>
+                    <div className='pt-10'>
+                      <a href='/projekts-1'>
+                        <Button className='w-44' variant='outlineBlack'>
+                          Uzzināt vairāk
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className='container mx-auto max-w-[1043px] px-4 pb-10 sm:px-6'>
+              <div className='shadow-subtle justify-center rounded-[20px] bg-accent text-black'>
                 <div className='flex flex-row lg:flex-row'>
                   <div className='flex items-center justify-center bg-background py-14 text-black sm:w-2/5 lg:rounded-l-[20px]'>
                     <div className='flex flex-row justify-center gap-10'>
@@ -63,7 +106,7 @@ const Jaunumi: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </section>
         </main>
       </div>

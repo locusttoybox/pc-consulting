@@ -31,11 +31,13 @@ const ParMums: React.FC = () => {
           </section>
           <section
             id='section-1'
-            className='w-screen bg-background pb-2 pt-28 sm:pb-2 sm:pt-14 lg:py-20'
+            className='w-screen bg-background pb-2 pt-14 sm:pb-2 sm:pt-14 lg:py-20'
           >
             <div className='container mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
               <div className='flex flex-col sm:w-1/2 lg:w-1/2 lg:flex-col'>
-                <h1 className='pb-8 text-4xl text-black'>Kontaktinformācija</h1>
+                <h1 className='pb-8 font-fahkwang text-4xl text-black'>
+                  Kontaktinformācija
+                </h1>
 
                 <div className='flex flex-row gap-10'>
                   <img
