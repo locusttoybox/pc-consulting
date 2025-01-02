@@ -5,10 +5,10 @@ import Image4 from '../../assets/es-next-logo-01.png';
 
 const Footer: React.FC = () => {
   return (
-    <div className='bg-[#FDFFFC]'>
+    <div className='bg-background'>
       <section
         id='footer-links'
-        className='my-12 h-full w-screen bg-[#FDFFFC] md:my-12 lg:my-12'
+        className='my-12 h-full w-screen md:my-12 lg:my-12'
       >
         <div className='container mx-auto max-w-[1043px] px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-row items-center justify-between gap-20'>

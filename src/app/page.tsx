@@ -42,11 +42,11 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex flex-col sm:w-[50%] lg:w-[70%] lg:flex-row'>
-                <h2 className='text-left sm:text-base lg:text-secondary lg:text-white'>
+                <h2 className='text-left text-base text-white sm:text-white md:text-white lg:text-secondary lg:text-white'>
                   PC Consulting realizē projektu Nr. 2.2.1.3.i.0/1/24/A/CFLA/004
-                  - `Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
+                  - "Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
                   izstrāde, integrējot atjaunojamos energoresursus un
-                  elektrotīkla balansēšanu`.
+                  elektrotīkla balansēšanu".
                 </h2>
               </div>
             </div>
