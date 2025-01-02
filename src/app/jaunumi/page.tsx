@@ -13,10 +13,10 @@ const Jaunumi: React.FC = () => {
         <main>
           <section
             id='jaunumi'
-            className='w-screen bg-primary pb-14 pt-28 sm:pb-2 sm:pt-14 lg:pb-14 lg:pt-28'
+            className='w-screen bg-primary pb-10 pt-20 sm:pb-2 sm:pt-10 lg:pb-14 lg:pt-20'
           >
             <div className='h-800px container mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
-              <h1 className='font-fahkwang text-3xl text-accent sm:text-3xl lg:text-6xl'>
+              <h1 className='font-fahkwang text-3xl text-background sm:text-3xl lg:text-6xl'>
                 Jaunumi
               </h1>
             </div>
@@ -26,9 +26,9 @@ const Jaunumi: React.FC = () => {
             className='w-screen bg-primary pb-14 sm:pb-2 lg:pb-14'
           >
             <div className='container mx-auto max-w-[1043px] px-4 pb-10 sm:px-6'>
-              <div className='shadow-subtle justify-center rounded-[20px] bg-accent text-black'>
+              <div className='justify-center rounded-[20px] bg-accent text-black shadow-subtle'>
                 <div className='flex flex-col sm:flex-col lg:flex-row'>
-                  <div className='flex items-center justify-center bg-background py-14 text-black sm:w-2/5 sm:rounded-l-none sm:rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none'>
+                  <div className='flex items-center justify-center rounded-t-[20px] bg-background py-14 text-black sm:w-2/5 sm:rounded-l-none sm:rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none'>
                     {' '}
                     <div className='flex flex-row justify-center gap-10'>
                       {' '}

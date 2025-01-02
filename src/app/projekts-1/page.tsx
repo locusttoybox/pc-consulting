@@ -1,3 +1,5 @@
+'use client';
+import React from 'react';
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
 
@@ -9,19 +11,19 @@ const Projekts1 = () => {
           <Header />
           <section
             id='projekts-1'
-            className='w-screen bg-primary pb-14 pt-28 sm:pb-2 sm:pt-14 lg:pb-14 lg:pt-28'
+            className='w-screen bg-primary pb-10 pt-20 sm:pb-2 sm:pt-10 md:pb-12 lg:pb-14 lg:pt-20'
           >
-            <div className='h-800px container mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
-              <h1 className='font-fahkwang text-3xl text-accent sm:text-3xl lg:text-6xl'>
+            <div className='h-800px container mx-auto max-w-[1043px] px-4 pb-10 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
+              <h1 className='font-fahkwang text-3xl text-background sm:text-3xl md:mt-16 md:text-4xl lg:text-6xl'>
                 Par Projektu
               </h1>
             </div>
           </section>
           <section
             id='section-1'
-            className='w-screen bg-background pb-14 pt-14 sm:pb-2 sm:pt-14 lg:pb-14 lg:pt-14'
+            className='w-screen bg-background pb-10 pt-14 sm:pb-2 sm:pt-14 lg:py-14'
           >
-            <div className='lg:pt:8 pb:2 container mx-auto max-w-[1043px] px-4 sm:px-6'>
+            <div className='lg:pt:8 pb:2 container mx-auto max-w-[1043px] px-4 sm:px-6 md:pb-14'>
               <div className='sm:w-full lg:w-2/3'>
                 <h3 className='pb-10 text-2xl text-black'>
                   PC Consulting ievieš videi draudzīgas elektroauto uzlādes
@@ -114,8 +116,8 @@ const Projekts1 = () => {
                   </h3>
                   <p className='text-base text-black'>
                     Viedo materiālu un tehnoloģiju kompetences centrs aptver
-                    trīs zinātniskos virzienus – viedos materiālus,
-                    biotehnoloģiju un vidi.  Cetrs atbalsta vismaz 13 pētījumus
+                    trīs zinātniskos virzienus: viedos materiālus,
+                    biotehnoloģiju un vidi. Cetrs atbalsta vismaz 13 pētījumus
                     atbilstoši definētajiem pētniecības virzieniem, attīstot
                     jaunus produktus un tehnoloģijas nozarē un ieviešot tās
                     ražošanā, tādējādi veicinot pētniecības un rūpniecības

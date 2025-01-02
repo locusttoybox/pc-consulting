@@ -1,5 +1,9 @@
+'use client';
+import React from 'react';
 import Footer from './components/ui/Footer';
 import Header from './components/ui/Header';
+import Illustration from './assets/illustration-4.png';
+import Illustration1 from './assets/illustration-mobile.png';
 
 export default function Home() {
   return (
@@ -9,30 +13,40 @@ export default function Home() {
           <Header />
           <section
             id='hero'
-            className='lg:pt-30 relative h-[700px] w-screen bg-primary pt-32 lg:h-[800px] lg:pb-14'
+            className='lg:pt-30 relative h-[630px] w-screen bg-primary pt-24 md:pt-24 lg:h-[800px] lg:pb-14'
           >
             <div className='container relative mx-auto max-w-[1043px] px-4 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-10'>
-              <div className='flex flex-col sm:w-1/2 lg:w-2/3 lg:flex-row'>
-                {/* <div className='flex-1'> */}
-                <h1 className='mb-10 w-full text-left font-[family-name:Fahkwang] text-3xl text-accent sm:mb-10 sm:text-3xl md:text-6xl lg:mb-10 lg:text-6xl'>
-                  Ceļā uz stabilu un ilgtspējīgu nākotni ar inovatīvām viedajām
-                  tehnoloģijām
-                </h1>
-                {/* </div> */}
-                {/* <div className='max-w-[100px] flex-1 lg:ml-10'>
+              <div className='sm:block md:hidden lg:hidden'>
+                <div className='mx-auto w-[70%]'>
                   <img
-                    src={HeroImage.src}
+                    src={Illustration1.src}
                     alt='Hero Image'
                     className='h-auto w-full'
                   />
-                </div> */}
+                </div>
               </div>
-              <div className='flex flex-col sm:w-1/2 lg:w-4/5 lg:flex-row'>
-                <h2 className='text-left text-white sm:text-4xl lg:text-2xl'>
+              <div className='flex flex-col sm:w-1/2 md:mt-0 lg:mt-0 lg:w-2/3 lg:flex-row'>
+                {' '}
+                <div className='mb-2.5 mt-8 flex-1 sm:mt-10'>
+                  <h1 className='mb-4 w-full text-left font-[family-name:Fahkwang] text-3xl text-accent sm:mb-4 sm:text-3xl md:text-4xl lg:mb-4 lg:text-6xl'>
+                    Ceļā uz stabilu un ilgtspējīgu nākotni ar inovatīvām
+                    viedajām tehnoloģijām
+                  </h1>
+                </div>
+                <div className='absolute hidden max-w-[460px] flex-1 sm:block md:ml-[460px] lg:ml-[670px] lg:mr-[-120px] lg:mt-[10px]'>
+                  <img
+                    src={Illustration.src}
+                    alt='Hero Image'
+                    className='h-auto w-full'
+                  />
+                </div>
+              </div>
+              <div className='flex flex-col sm:w-[50%] lg:w-[70%] lg:flex-row'>
+                <h2 className='text-left sm:text-base lg:text-secondary lg:text-white'>
                   PC Consulting realizē projektu Nr. 2.2.1.3.i.0/1/24/A/CFLA/004
-                  - “Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
+                  - `Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
                   izstrāde, integrējot atjaunojamos energoresursus un
-                  elektrotīkla balansēšanu”.
+                  elektrotīkla balansēšanu`.
                 </h2>
               </div>
             </div>
@@ -42,15 +56,16 @@ export default function Home() {
             className='my-12 h-full w-screen bg-background sm:my-12 lg:my-20'
           >
             <div className='container mx-auto max-w-[1043px] px-4 pb-2 sm:px-6'>
-              {/* <div className='w-full sm:w-1/2 lg:w-2/3'>
-                <h2 className='pb-12 text-left text-2xl text-secondary sm:text-4xl lg:text-2xl'>
-                  Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
-                  izstrāde, integrējot atjaunojamos energoresursus un
-                  elektrotīkla balansēšanu
+              <div className='lg:w-1/2'>
+                <h2 className='pb-12 text-left text-2xl text-secondary text-black sm:text-4xl md:text-2xl lg:text-2xl'>
+                  Projekta īstenotājs SIA PC Consulting Reģistrācijas Nr.
+                  40203154418
                 </h2>
-              </div> */}
+              </div>
+
               <div className='grid gap-6 sm:min-h-full lg:grid-cols-[1fr_2fr]'>
-                <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                <div className='justify-center rounded-lg bg-accent p-6 text-black shadow-subtle'>
+                  <div className='lg:w-1/2'></div>
                   <h3 className='pb-10 text-2xl'>
                     Pasaulē unikāls ielu apmaļu elektroauto uzlādes risinājums
                   </h3>
@@ -68,7 +83,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className='flex flex-col gap-6'>
-                  <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                  <div className='justify-center rounded-lg bg-accent p-6 text-black shadow-subtle'>
                     <h3 className='pb-7 text-2xl'>
                       Universāls komunikāciju un uzlādes iekārtu vadības modulis
                     </h3>
@@ -77,7 +92,7 @@ export default function Home() {
                       Komunikācijas modeļa izstrāde, ieviešot ISO15118 protokolu
                     </p>
                   </div>
-                  <div className='shadow-subtle justify-center rounded-lg bg-accent p-6 text-black'>
+                  <div className='justify-center rounded-lg bg-accent p-6 text-black shadow-subtle'>
                     <h3 className='pb-7 text-2xl'>
                       Enerģijas plūsmu vadības sistēma
                     </h3>
@@ -100,29 +115,22 @@ export default function Home() {
             <div className='container mx-auto max-w-[1043px] px-4 pb-20 pt-12 sm:px-6 sm:pb-20 sm:pt-12 lg:py-20'>
               <div className='lg:gap-16" flex flex-col gap-8 lg:flex-row'>
                 <div className='lg:w-1/2'>
-                  <h2 className='text-left text-2xl text-secondary text-white sm:text-4xl lg:text-2xl'>
-                    Projekta īstenotājs SIA “PC Consulting ” Reģistrācijas Nr.
+                  <h2 className='text-left text-2xl text-secondary text-white sm:text-4xl md:text-2xl lg:text-2xl'>
+                    Projekta īstenotājs SIA PC Consulting Reģistrācijas Nr.
                     40203154418
                   </h2>
                 </div>
-                {/* <div className='lg:w-1/2'>
-                  <h2 className='text-left text-2xl text-secondary text-white sm:text-4xl lg:text-2xl'>
-                    Videi draudzīgas elektroauto uzlādes ekosistēmas prototipa
-                    izstrāde, integrējot atjaunojamos energoresursus un
-                    elektrotīkla balansēšanu
-                  </h2>
-                </div> */}
               </div>
               <div className='grid w-full gap-6 pt-12 sm:grid-cols-1 lg:grid-cols-3'>
-                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                <div className='justify-center rounded-lg bg-accent p-14 text-center text-black shadow-card'>
                   <h3 className='pb-7 text-2xl'>Projekta Ilgums</h3>
                   <p className='text-secondary'>10/2024 - 09/2026</p>
                 </div>
-                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                <div className='justify-center rounded-lg bg-accent p-14 text-center text-black shadow-card'>
                   <h3 className='pb-7 text-2xl'>Kopējais Budžets</h3>
                   <p className='text-secondary'>1 307 590.00 €</p>
                 </div>
-                <div className='shadow-card justify-center rounded-lg bg-accent p-14 text-center text-black'>
+                <div className='justify-center rounded-lg bg-accent p-14 text-center text-black shadow-card'>
                   <h3 className='pb-7 text-2xl'>ES Finansējums</h3>
                   <p className='text-secondary'>1 307 590.00 €</p>
                 </div>

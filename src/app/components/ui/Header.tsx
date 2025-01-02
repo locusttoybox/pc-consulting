@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 
 // import { HeaderProps } from '@radix-ui/themes/src/components/table.jsx';
 import { useState, useEffect } from 'react';
@@ -35,7 +36,7 @@ const Header: React.FC<HeaderProps> = () => {
               <img
                 src={LogoImage.src}
                 alt='pc-group-logo'
-                className='color-white w-46 h-8 align-baseline'
+                className='color-white h-10 w-40 align-baseline'
               ></img>
             </a>
           )}{' '}
@@ -44,13 +45,13 @@ const Header: React.FC<HeaderProps> = () => {
               <div className='hidden gap-6 sm:flex'>
                 <a
                   href='/par-mums'
-                  className='font-fahkwang text-secondary text-white hover:text-accent'
+                  className='font-montsserat text-secondary text-white hover:text-accent'
                 >
                   Par Mums
                 </a>
                 <a
                   href='/jaunumi'
-                  className='font-fahkwang text-secondary text-white hover:text-accent'
+                  className='font-montsserat text-secondary text-white hover:text-accent'
                 >
                   Jaunumi
                 </a>
