@@ -10,7 +10,7 @@ const Projekts1 = () => {
         <div className='absolute inset-0 overflow-x-hidden bg-background'>
           <Header />
           <section
-            id='projekts-1'
+            id='projekts-3'
             className='w-screen bg-primary pb-10 pt-20 sm:pb-2 sm:pt-10 md:pb-12 lg:pb-14 lg:pt-20'
           >
             <div className='h-800px container mx-auto max-w-[1043px] px-4 pb-10 pt-2 sm:px-6 sm:pt-2 lg:px-8 lg:pt-2'>
@@ -33,30 +33,63 @@ const Projekts1 = () => {
                 </h3>
                 <div className='pb-6'>
                   <h3 className='pb-2 text-secondary text-black'>
-                    Rīga, 01.02.2025
+                    Rīga, 15.04.2024
                   </h3>
                   <p className='pb-6 text-base text-black'>
-                    Latvijā dibinātais uzņēmums PC Consulting veiksmīgi
-                    noslēdzis pirmo ceturksni (01.10.2024-31.12.2024)
-                    pētniecības projektā “Videi draudzīgas elektroauto uzlādes
-                    ekosistēmas prototipa izstrāde, integrējot atjaunojamos
-                    energoresursus un elektrotīkla balansēšanu.” Šajā posmā
-                    uzņēmums uzsāka un īstenoja trīs nozīmīgas aktivitātes:
+                    Latvijā dibinātais uzņēmums “PC Consulting” sekmīgi
+                    noslēdzis pētniecības projekta “Videi draudzīgas elektroauto
+                    uzlādes ekosistēmas prototipa izstrāde, integrējot
+                    atjaunojamos energoresursus un elektrotīkla balansēšanu”
+                    otro ceturksni (01.01.2025 - 31.03.2025). Trijos mēnešos
+                    paveikts būtisks darbs pie tehnoloģiju attīstības un
+                    starptautiskās sadarbības.
+                  </p>
+                  <p className='pb-6 text-secondary text-black'>
+                    Galvenās īstenotās aktivitātes
                   </p>
                   <li className='flex list-none flex-col gap-2 pb-6 pl-6'>
                     <ul className='text-base text-black'>
-                      Pētījums par viedo uzlādes standartu ieviešanas iespējām
+                      2.1.1. Datu iegūšana un sākotnējā apstrāde enerģijas
+                      plūsmu optimizācijas modeļa izstrādei{' '}
                     </ul>
                     <ul className='text-base text-black'>
-                      Iepazīšanās ar State-of-the-Art risinājumiem un
-                      komunikācijas sistēmas arhitektūras izvēle
+                      3.2.1. Komunikācijas moduļa universālo pamatfunkciju
+                      izstrāde
                     </ul>
                     <ul className='text-base text-black'>
-                      Divvirzienu uzlādes risinājuma konceptuālo risinājumu
-                      izstrāde mazjaudas prototipam
+                      4.1. Sistēmanalīze un sistēmas arhitektūras izvēle
+                    </ul>
+                    <ul className='text-base text-black'>
+                      4.2.1. Backend programmatūras pamatservisu izstrāde,
+                      serveru uzstādīšana un konfigurēšana saziņai ar
+                      komunikācijas moduli{' '}
+                    </ul>
+                    <ul className='text-base text-black'>
+                      5.1. Pieejamo materiālu state-of-the-art izpēte
+                    </ul>
+                    <ul className='text-base text-black'>
+                      6.2.1. Divvirzienu uzlādes sistēmas spoļu konstrukcijas
+                      optimizēšana palielinātai jaudai{' '}
                     </ul>
                   </li>
+                  <p className='pb-2 text-secondary text-black'>
+                    Starptautiskā sadarbība
+                  </p>
                   <p className='text-base text-black'>
+                    Kopā ar Apvienotās Karalistes partneri “Lesla Ltd” uzsākta
+                    10. aktivitāšu pakete (Starptautiska). Tās pirmajā posmā -
+                    10.1. aktivitātē - tiek apkopota informācija par Apvienotās
+                    Karalistes enerģētikas nozari un elektroauto lietošanas
+                    paradumiem. Šī analīze nodrošinās pamatu, lai novērtētu mūsu
+                    risinājuma pielietojamību un eksporta potenciālu šajā tirgū.
+                  </p>
+                </div>
+
+                <div className='pb-6'>
+                  <p className='pb-2 text-secondary text-black'>
+                    Par projektu{' '}
+                  </p>
+                  <p className='pb-2 text-base text-black'>
                     Projektā “Videi draudzīgas elektroauto uzlādes ekosistēmas
                     prototipa izstrāde, integrējot atjaunojamos energoresursus
                     un elektrotīkla balansēšanu” (Nr.
@@ -72,8 +105,6 @@ const Projekts1 = () => {
                     publiskās uzlādes stacijas, saņemt pilnvērtīgu uzlādes un
                     atbilstošu tīkla balansēšanas pakalpojumu.
                   </p>
-                </div>
-                <div className='pb-6'>
                   <p className='text-base text-black'>
                     Projektā paredzēta vairāku demonstrācijas sistēmu
                     uzstādīšana dažādās vietās, lai reālajā vidē pārbaudītu
@@ -85,7 +116,7 @@ const Projekts1 = () => {
                 </div>
                 <div className='pb-6'>
                   <h3 className='pb-2 text-secondary text-black'>
-                    Par PC Consulting
+                    Par PC Consulting{' '}
                   </h3>
                   <p className='text-base text-black'>
                     PC Consulting ir Latvijā dibināts uzņēmums, kas
@@ -96,7 +127,7 @@ const Projekts1 = () => {
                 </div>
                 <div className='pb-6'>
                   <h3 className='pb-2 text-secondary text-black'>
-                    Par Viedo Materiālu un tehnoloģiju kompetences centru
+                    Par Viedo Materiālu un tehnoloģiju kompetences centru{' '}
                   </h3>
                   <p className='text-base text-black'>
                     SIA “VMKC” atbilstoši Ministru kabineta noteikumiem Nr. 32,
